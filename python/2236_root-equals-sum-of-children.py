@@ -1,5 +1,6 @@
 # Description: Return true if the value of the root is equal to the sum of the values of its two children,
 # or false otherwise.
+# Difficulty: Easy
 # Tags: Tree, Binary Tree
 # Time: O(1)
 # Space: O(1)
