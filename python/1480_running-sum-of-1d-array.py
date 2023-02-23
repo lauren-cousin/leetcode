@@ -4,13 +4,19 @@
 # Tags: Array, Prefix Sum
 # Time: O(n)
 # Space: O(1)
-
-
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
-        sum = 0
-        sumList = []
-        for num in nums:
-            sum += num
-            sumList.append(sum)
-        return sumList
+        for i in range(1, len(nums)):
+            nums[i] += nums[i - 1]
+        return nums
+
+# Time: O(n)
+# Space: O(n) -> have to access and store sum, sumList
+# class Solution:
+#     def runningSum(self, nums: List[int]) -> List[int]:
+#         sum = 0
+#         sumList = []
+#         for num in nums:
+#             sum += num
+#             sumList.append(sum)
+#         return sumList
