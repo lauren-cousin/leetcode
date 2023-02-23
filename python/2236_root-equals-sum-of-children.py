@@ -4,8 +4,6 @@
 # Tags: Tree, Binary Tree
 # Time: O(1)
 # Space: O(1)
-from typing import Optional
-
 
 # Definition for a binary tree node.
 class TreeNode:
