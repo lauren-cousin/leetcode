@@ -2,7 +2,6 @@
 # The DataFrame should have two columns, student_id and age, and be in the same order as the original 2D list.
 #
 # Difficulty: Easy
-# Tags: Math, String, Simulation
 # Time: O(n) – because the function iterates through the student_data to create the DataFrame.
 # Space: O(n) – because the DataFrame occupies space proportional to the size of the input list.
 import pandas as pd
