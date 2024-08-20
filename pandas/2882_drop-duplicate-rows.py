@@ -37,7 +37,7 @@
 # | 6           | Violet  | alice@example.com   |
 # +-------------+---------+---------------------+
 # Explanation:
-# Alic (customer_id = 4) and Finn (customer_id = 5) both use john@example.com, so only the first occurrence of this email is retained.
+# Alice (customer_id = 4) and Finn (customer_id = 5) both use john@example.com, so only the first occurrence of this email is retained.
 #
 # Difficulty: Easy
 # Time: O(n) – because drop_duplicates needs to scan all n rows in the DataFrame to identify and remove duplicates.
