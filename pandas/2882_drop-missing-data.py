@@ -38,8 +38,8 @@
 #
 # Difficulty: Easy
 # Time: O(n) – because the dropna function must scan all n rows in the DataFrame to identify and remove rows with missing values in the name column.
-# Space: O(1) – because the operation modifies the DataFrame in place without creating a new one.
+# Space: O(n) – because the dropna function creates and returns a new DataFrame with the specified rows removed. This requires additional space proportional to the size of the DataFrame, hence O(n) space complexity.
 import pandas as pd
 
 def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
-    return students.dropna(subset=['name'], inplace=True)
+    return students.dropna(subset=['name'])
